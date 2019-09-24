@@ -1,0 +1,14 @@
+declare
+	length number(5);
+	width number(5);
+	perimeter number(5);
+	area number(5);
+begin
+	length:=&length;
+	width:=&width;
+	perimeter:=2*(length+width);
+	area:=(length*width);
+	dbms_output.put_line('Perimeter is = '|| perimeter);
+	dbms_output.put_line('Area Of Rectangle = '|| area);
+end;
+/
